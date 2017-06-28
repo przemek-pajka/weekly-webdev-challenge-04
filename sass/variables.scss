@@ -1,0 +1,44 @@
+// GRID BASE CONFIG
+$grid-columns: 12; //IloĹ›Ä‡ kolumn grid'a
+$container: 958px; // SzerokoĹ›Ä‡ kontenera (wrappera)
+
+$desktopXS-grid-columns: 12;
+$tablet-grid-columns: 12;
+$mobile-grid-columns: 12;
+$mobileS-grid-columns: 12;
+
+// PAGE FONTS
+$roboto-bold: 'Roboto-Bold';
+$roboto-light: 'Roboto-Light';
+$roboto-light-italic: 'Roboto-LightItalic';
+$roboto-medium: 'Roboto-Medium';
+$roboto-regular: 'Roboto-Regular';
+$roboto-thin: 'Roboto-Thin';
+
+// PAGE COLORS
+$baseColor: #475055; // Kolor bazowy (zazwyczaj czarny lub podobny wykorzystywany globalnie np. dla fontów)
+$altColor: #787878; // Kolor alternatywny (dla jasno szarych bloków, pod zdjęcia,ikony)*/
+$secColor: #ea6060; // czerwony
+$aquaColor: #56ccc8;
+$blueColor: #4fc6f8;
+$navyColor: #1f3045;
+
+$fbColor: #4d6baa;
+$twColor: #4fc6f8;
+$gplusColor: #ea6060;
+$linkedinColor: #238cc8;
+
+// SECTIONS BG
+$body_bg: #475e7a;
+
+
+// SIDE MENU
+/*$sideMenuBorder: #ededed;*/
+
+
+//MEDIA QUERIES
+$desktop: "min-width: 769px";
+$desktop-xs: "max-width: 1024px";
+$tablet: "max-width: 768px";
+$phone-xl: "max-width: 425px";
+$phone-xs: "max-width: 375px";
