@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Weekly WebDev Challenge 04</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/external/fontello/fontello.css">
     <link rel="stylesheet" type="text/css" href="css/external/hamburgers/hamburgers.css">
     <link rel="stylesheet" type="text/css" href="css/external/swiper/swiper.min.css">
-    <link rel='stylesheet' href='css/external/calendar/fullcalendar.min.css' />
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -67,7 +66,7 @@
             <!--.top-wrapper-->
         <main>
             <div class="flex-row sm-flex-column content-container">
-                <div class="side-bar__menu__wrapper">
+                <div class="side-bar__menu__wrapper col-sm-12">
                     <nav class="side-bar__nav">
                         <ul class="side-bar__nav__list flex-column">
                             <li>
@@ -77,7 +76,7 @@
                                 <a href="#"><i class="icon-basket"></i>Store</a>
                             </li>
                             <li>
-                                <a href="#" class="blog-submenu"><i class="icon-edit"></i>Blog</a>
+                                <a href="#" class="blog-submenu"><i class="icon-edit"></i>Blog<i class="icon-right-open"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="icon-group"></i>Community</a>
@@ -124,7 +123,7 @@
                     <!--.company-details__box-->
                 </div>
                 <!--.side-bar__menu__wrapper-->
-                <div class="side-bar__submenu__wrapper">
+                <div class="side-bar__submenu__wrapper sm-disp-none">
                     <div class="side-bar__submenu__category__box flex-column">
                         <a class="side-bar__category__box__title" href="#">
                             Tech
@@ -175,8 +174,8 @@
                     <!--side-bar__submenu__category__box-->
                 </div>
                 <!--.side-bar__submenu__wrapper-->
-                <div class="content__menu-right flex-row">
-                    <nav class="socials__box">
+                <div class="content__menu-right flex-row sm-flex-column sm-margin-0 sm-margin-top col-sm-12">
+                    <nav class="socials__box col-sm-12">
                         <ul>
                             <li>
                                 <a href="#"><i class="icon-facebook"></i>Facebook</a>
@@ -196,7 +195,7 @@
                         </ul>
                     </nav>
                     <!--.socials__box-->
-                    <div class="fb-tw__boxes__column flex-column">
+                    <div class="fb-tw__boxes__column flex-column col-sm-12 sm-padd-0">
                         <div class="follow__box fb__box">
                             <i class="icon-facebook icon-social"></i>
                             <div class="follow__row">
@@ -209,7 +208,7 @@
                         </div>
                         <!--.follow__box-->
 
-                        <div class="follow__box tw__box">
+                        <div class="follow__box tw__box col-sm-12">
                             <i class="icon-twitter icon-social"></i>
                             <div class="follow__row">
                                 <div class="follow__number">89K</div>
@@ -256,10 +255,10 @@ Despite its long life on the market...</p>
                 </div>
                 <!--.banner-slider__box-->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/slider-1.jpg"></div>
-                    <div class="swiper-slide"><img src="images/slider-2.jpg"></div>
-                    <div class="swiper-slide"><img src="images/slider-3.jpg"></div>
-                    <div class="swiper-slide"><img src="images/slider-4.jpg"></div>>
+                    <div class="swiper-slide"><img src="images/slider-1.jpg" alt="Wolf image"></div>
+                    <div class="swiper-slide"><img src="images/slider-2.jpg" alt="Flower image"></div>
+                    <div class="swiper-slide"><img src="images/slider-3.jpg" alt="Eagle image"></div>
+                    <div class="swiper-slide"><img src="images/slider-4.jpg" alt="Sky image"></div>>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -272,7 +271,7 @@ Despite its long life on the market...</p>
                 </div>
             </div>
             <!--.banner-slider-->
-            <div class="video-wrapper flex-row">
+            <div class="video-wrapper flex-row sm-flex-column">
                 <div class="best-story__box">
                     <i class="icon-videocam post-section__icon bg--sec"></i>
                     <div class="video-text__box">
@@ -283,7 +282,7 @@ Despite its long life on the market...</p>
                     <!--.video-text__box-->
                 </div>
                 <!--.best-story__box-->
-                <div class="video-options__box flex-column">
+                <div class="video-options__box flex-column sm-flex-row">
                     <a class="video-option" href="#">
                         <i class="icon-heart-empty"></i>
                         Like
@@ -302,7 +301,7 @@ Despite its long life on the market...</p>
                 </div>
                 <!--.video-options__box-->
                 <div class="youtube-video__container">
-                    <iframe src="https://www.youtube.com/embed/A7yIxihqdzw?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/A7yIxihqdzw?ecver=2" frameborder="0" style="position:relative;width:100%;height:100%;left:0" allowfullscreen></iframe>
                 </div>
                <!--.yotube-video__container-->
             </div>
@@ -310,40 +309,40 @@ Despite its long life on the market...</p>
 
 
             <div class="flex-row sm-flex-column">
-            <div class="content-left-bottom__section flex-column">
-                <div class="stats-likes-shares__box">
-                    <div class="like-shares__text-box">
-                        <i class="icon-export">1,325</i>
-                        <i class="icon-heart">682</i>
+                <div class="content-left-bottom__section flex-column col-sm-12">
+                    <div class="stats-likes-shares__box">
+                        <div class="like-shares__text-box">
+                            <i class="icon-export">1,325</i>
+                            <i class="icon-heart">682</i>
+                        </div>
+                        <!--.like-shares__text-box-->
                     </div>
-                    <!--.like-shares__text-box-->
-                </div>
-                <!--.stats-likes-shares__box-->
-                <div class="last-tweets__box">
-                    <div class="tweet-author">
-                        <div class="author-name">
-                            <span class="roboto-medium">Alex White</span> @alexwhite</div> 
-                             <i class="icon-ok"></i>
+                    <!--.stats-likes-shares__box-->
+                    <div class="last-tweets__box">
+                        <div class="tweet-author">
+                            <div class="author-name">
+                                <span class="roboto-medium">Alex White</span> @alexwhite</div> 
+                                <i class="icon-ok"></i>
+                        </div>
+                        <!--.tweet-author-->
+                        <div class="tweet-item">
+                            <p>Singolo is a free PSD template<br> 
+    of a flat, single page website 
+    created by <span class="roboto-bold"> @PsdChat #freebie 
+    #psd <a href="#">http://bit.ly/19XM8Lj</a></span></p>
+                            <div class="time-ago">2 hours ago</div>
+                        </div>
+                        <!--.tweet-item-->
+                        <div class="tweet-item">
+                            <p>Saturday Career Workshops 
+    are back at ADC! See what high<br> 
+    school students created this<br> 
+    week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
+                            <div class="time-ago">2 hours ago</div>
+                        </div>
+                        <!--.tweet-item-->
                     </div>
-                    <!--.tweet-author-->
-                    <div class="tweet-item">
-                        <p>Singolo is a free PSD template<br> 
-of a flat, single page website 
-created by <span class="roboto-bold"> @PsdChat #freebie 
-#psd <a href="#">http://bit.ly/19XM8Lj</a></span></p>
-                        <div class="time-ago">2 hours ago</div>
-                    </div>
-                    <!--.tweet-item-->
-                    <div class="tweet-item">
-                        <p>Saturday Career Workshops 
-are back at ADC! See what high<br> 
-school students created this<br> 
-week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
-                        <div class="time-ago">2 hours ago</div>
-                    </div>
-                    <!--.tweet-item-->
-                </div>
-                <!--.last-tweets__box-->
+                    <!--.last-tweets__box-->
 
                 <div class="hot-news__box">
                     <div class="hot-news-header">
@@ -435,7 +434,7 @@ week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
 
                 <div class="contact-form__box">
                     <h3 class="head-title">Ask a Question</h3>
-                    <form action="" class="flex-column">
+                    <form action="#" class="flex-column">
                         <input type="text" placeholder="Your name"/>
                         <input type="text" placeholder="Your email"/>
                         <textarea placeholder="Your question..."></textarea>
@@ -445,8 +444,8 @@ week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
                 <!--.contact-form__box-->
             </div>
             <!--.content-left-bottom__section-->
-            <div class="content-right-bottom__section flex-row">
-                <div class="insta-row">
+            <div class="content-right-bottom__section flex-row col-sm-12">
+                <div class="insta-row sm-flex-column sm-margin-top">
                     <i class="icon-camera post-section__icon bg--tw"></i>
                     <div class="insta-text__box">
                         <h3 class="head-title">Here's What<br>Instagram Ads Will Look Like</h3>
@@ -455,7 +454,7 @@ week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
                     </div>
                     <!--.insta-text__box-->
                     <div class="insta-image">
-                        <img src="images/slider-1.jpg"/>
+                        <img src="images/wolf-small.jpg" alt="Wolf image"/>
                     </div>
                 </div>
                 <!--.insta-row-->
@@ -473,13 +472,14 @@ week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
                         </div>
                         <!--#next-month-->
                     </div>
+                    <!--.calendar_header-->
                     <div class="calendar_content">
                     </div>
                     <!--.calendar_content-->
                 </div>
                 <!--.calendar-->
 
-                <a class="view-stories__box" href="#">
+                <a class="view-stories__box sm-margin-0 col-sm-12" href="#">
                     <h3>VIEW<br>MORE<br>STORIES</h3>
                     <i class="icon-right-open"></i>
                 </a>
@@ -521,51 +521,51 @@ week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
                 </div>
                 <!--.article-box-->
                 <div class="quotes-box">
-                <i class="icon-quote-right post-section__icon bg--aqua"></i>
-                <div class="quotes-text__box">“ If you don’t like something change it.<br>
-  If you can’t change it, change the way you 
-  think about it ”</div>
+                    <i class="icon-quote-right post-section__icon bg--aqua"></i>
+                    <div class="quotes-text__box">“ If you don’t like something change it.<br>
+    If you can’t change it, change the way you 
+    think about it ”</div>
                     <!--.quotes-text__box-->
-            </div>
-            <!--.quotes-box-->
-
-            <div class="tabs__box">
-                <div class="tabs-header">
-                    <button class="tablinks">About</button>
-                    <button class="tablinks">Team</button>
-                    <button class="tablinks">Privacy</button>
-                    <button class="tablinks">Advertise</button>
-                    <button class="tablinks">Contact</button>
                 </div>
+                <!--.quotes-box-->
 
-                <div id="About" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis porta ex, sed finibus ex bibendum vel. Donec pulvinar porttitor lorem quis lacinia. </p>
-                    <p>Sed vel tempus urna. Fusce aliquet ipsum nisi, mattis consectetur libero hendrerit vel. Etiam enim tortor, ultricies eget lacus sed, blandit vulputate lorem. Integer quis tristique tortor, eu porta risus.</p>
-                </div>
+                    <div class="tabs__box">
+                        <div class="tabs-header">
+                            <button class="tablinks active">About</button>
+                            <button class="tablinks">Team</button>
+                            <button class="tablinks">Privacy</button>
+                            <button class="tablinks">Advertise</button>
+                            <button class="tablinks">Contact</button>
+                        </div>
 
-                <div id="Team" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet quam. Ut sit amet, sollicitudin eu, dapibus quam at lacus sed felis. Pellentesque nunc. Vestibulum id eros lacus. </p>
-                    <p>Lorem ipsum dolor sit amet eleifend velit. In metus vitae ante. Duis hendrerit nonummy. Nam aliquet mauris enim, ac imperdiet nunc, at libero. Nulla mollis consectetuer. Quisque lorem eget elit.</p>
-                </div>
+                        <div id="About" class="tabcontent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis porta ex, sed finibus ex bibendum vel. Donec pulvinar porttitor lorem quis lacinia. </p>
+                            <p>Sed vel tempus urna. Fusce aliquet ipsum nisi, mattis consectetur libero hendrerit vel. Etiam enim tortor, ultricies eget lacus sed, blandit vulputate lorem. Integer quis tristique tortor, eu porta risus.</p>
+                        </div>
 
-                <div id="Privacy" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis porta ex, sed finibus ex bibendum vel. Donec pulvinar porttitor lorem quis lacinia. </p>
-                    <p>Sed vel tempus urna. Fusce aliquet ipsum nisi, mattis consectetur libero hendrerit vel. Etiam enim tortor, ultricies eget lacus sed, blandit vulputate lorem. Integer quis tristique tortor, eu porta risus.</p>
-                </div>
+                        <div id="Team" class="tabcontent">
+                            <p>Lorem ipsum dolor sit amet quam. Ut sit amet, sollicitudin eu, dapibus quam at lacus sed felis. Pellentesque nunc. Vestibulum id eros lacus. </p>
+                            <p>Lorem ipsum dolor sit amet eleifend velit. In metus vitae ante. Duis hendrerit nonummy. Nam aliquet mauris enim, ac imperdiet nunc, at libero. Nulla mollis consectetuer. Quisque lorem eget elit.</p>
+                        </div>
 
-                <div id="Advertise" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet quam. Ut sit amet, sollicitudin eu, dapibus quam at lacus sed felis. Pellentesque nunc. Vestibulum id eros lacus. </p>
-                    <p>Lorem ipsum dolor sit amet eleifend velit. In metus vitae ante. Duis hendrerit nonummy. Nam aliquet mauris enim, ac imperdiet nunc, at libero. Nulla mollis consectetuer. Quisque lorem eget elit.</p>
-                </div>
+                        <div id="Privacy" class="tabcontent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis porta ex, sed finibus ex bibendum vel. Donec pulvinar porttitor lorem quis lacinia. </p>
+                            <p>Sed vel tempus urna. Fusce aliquet ipsum nisi, mattis consectetur libero hendrerit vel. Etiam enim tortor, ultricies eget lacus sed, blandit vulputate lorem. Integer quis tristique tortor, eu porta risus.</p>
+                        </div>
 
-                <div id="Contact" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis porta ex, sed finibus ex bibendum vel. Donec pulvinar porttitor lorem quis lacinia. </p>
-                    <p>Sed vel tempus urna. Fusce aliquet ipsum nisi, mattis consectetur libero hendrerit vel. Etiam enim tortor, ultricies eget lacus sed, blandit vulputate lorem. Integer quis tristique tortor, eu porta risus.</p>
+                        <div id="Advertise" class="tabcontent">
+                            <p>Lorem ipsum dolor sit amet quam. Ut sit amet, sollicitudin eu, dapibus quam at lacus sed felis. Pellentesque nunc. Vestibulum id eros lacus. </p>
+                            <p>Lorem ipsum dolor sit amet eleifend velit. In metus vitae ante. Duis hendrerit nonummy. Nam aliquet mauris enim, ac imperdiet nunc, at libero. Nulla mollis consectetuer. Quisque lorem eget elit.</p>
+                        </div>
+
+                        <div id="Contact" class="tabcontent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis porta ex, sed finibus ex bibendum vel. Donec pulvinar porttitor lorem quis lacinia. </p>
+                            <p>Sed vel tempus urna. Fusce aliquet ipsum nisi, mattis consectetur libero hendrerit vel. Etiam enim tortor, ultricies eget lacus sed, blandit vulputate lorem. Integer quis tristique tortor, eu porta risus.</p>
+                        </div>
+                    </div>
+                    <!--.tabs__box-->
                 </div>
-            </div>
-            <!--.tabs__box-->
-            </div>
-            <!--.content-right-bottom__section-->
+                <!--.content-right-bottom__section-->
             </div> 
             <!--.flex-row-->
         </main>
@@ -574,7 +574,6 @@ week: <a href="#" class="roboto-bold">http://bit.ly/Xx1EsL</a></p>
     
     <script type="text/javascript" src="js/external/jquery/jquery-3.2.1.min.js"></script>
     <script src='js/external/scrollreveal/scrollreveal.min.js'></script>
-    <script src='js/external/calendar/moment.min.js'></script>
     <script src='js/external/calendar/own-calendar.js'></script>
     <script type="text/javascript" src="js/external/swiper/swiper.jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>

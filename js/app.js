@@ -85,4 +85,11 @@ window.sr = new ScrollReveal(n), sr.reveal("#header"), sr.reveal(".socials__box"
     $('.content__menu-right').toggleClass('smaller__box');
     $('.side-bar__submenu__wrapper').toggleClass('active');
   })
+  $('.hamburger').click(function() {
+    $('.main-nav').toggleClass('disable');
+  });
+  $('.side-bar__nav__list li').click(function() {
+    $('.side-bar__nav__list li .icon-right-open').toggleClass('active');
+  });
+  $('.youtube-video__container iframe').css('position','relative');
 });

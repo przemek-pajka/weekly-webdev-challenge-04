@@ -114,7 +114,7 @@ button {
 
 .content-container {
     @include justify-content(space-between);
-    height: 675px;
+    //height: 675px;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #a3abaf;
@@ -158,22 +158,43 @@ button {
             color: #fff;
     }
 }
+
+
+//columns 
+    .socials__box {
+        width: 50%;
+    }
+    .fb-tw__boxes__column {
+        width: 50%;
+        padding-left: 15px;
+    }
+    .view-stories__box {
+        width: 48%;
+        margin-left: 15px;
+    }
 // header 
     header {
         position: relative;
-        background-color: #fff;
         width: 100%;
         height: 58px;
         margin-bottom: 15px;
         @include display(flex);
         @include align-items(center);
+        overflow: hidden;
 
         .main-nav {
+            background-color: #fff;
             width: 100%;
             height: 100%;
             position: relative;
             display: flex;
             align-items: center;
+            overflow: hidden;
+            transition: width 1s;
+
+            &.disable {
+                width: 0%;
+            }
         }
         .top-wrapper__nav {
             max-width: 386px;
@@ -309,6 +330,7 @@ button {
     width: 25%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 
     .side-bar__nav {
         width: 100%;
@@ -337,6 +359,16 @@ button {
                 i:before {
                     font-size: 23px;
                     color: #c5cdd1;
+                }
+                i.icon-right-open {
+                    position: absolute;
+                    right: 0;
+                    transform: rotate(0deg);
+                    transition: transform 0.5s;
+
+                    &.active {
+                        transform: rotate(180deg);
+                    }
                 }
                 &.active,&:hover {
                     background-color: $aquaColor;
@@ -373,7 +405,7 @@ button {
             @include display(flex);
 
             i {
-                padding: 0px 16px;
+                padding: 0px 7%;
             }
             i:before {
                 font-size: 23px;
@@ -471,15 +503,15 @@ button {
     height: 100%;
     @include flex-wrap(wrap);
     transition: all 1s;
+    flex: 2;
 
 
     &.smaller__box {
         width: 50%;
     }
     .socials__box {
-        width: 50%;
         background-color: #fff;
-        padding: 30px 0px;
+        padding: 28px 0px;
 
         ul {
             width: 100%;
@@ -559,8 +591,6 @@ button {
         }
     }
     .fb-tw__boxes__column {
-        width: 50%;
-        padding-left: 15px;
         @include justify-content(space-between);
         .follow__box {
             width: 100%;
@@ -614,7 +644,7 @@ button {
     }
     .sign-in__box {
         width: 100%;
-        padding: 22px 0px 29px;
+        padding: 22px 20px 29px;
         background-color: #fff;
         margin-top: 15px;
         text-align: center;
@@ -661,7 +691,7 @@ button {
     }
     .join-newsletter__box {
         width: 100%;
-        padding: 20px 0px 24px;
+        padding: 20px 20px 24px;
         background-color: #fff;
         margin-top: 15px;
         text-align: center;
@@ -818,7 +848,7 @@ button {
     }
 }
 .video-text__box,.insta-text__box,.article-text__box {
-        padding: 36px 0px 45px 62px;
+        padding: 34px 20px 41px 62px;
     }
 
 .video-options__box {
@@ -850,7 +880,6 @@ button {
 }
 .youtube-video__container {
     position: relative;
-    max-width: 505px;
     width: 100%;
 }
 
@@ -864,6 +893,7 @@ button {
         background-color: $navyColor;
         .like-shares__text-box {
             max-width: 115px;
+            margin: 0 auto;
             @include display(flex);
             @include flex-wrap(wrap);
             @include justify-content(space-between);
@@ -1043,14 +1073,14 @@ button {
     @include flex-wrap(wrap);
 
     .insta-row {
-        max-height: 300px;
         margin-bottom: 15px;
         @include display(flex);
         .insta-image {
-            max-width: 300px;
             width: 100%;
+            @include display(flex);
 
             img {
+                width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
@@ -1058,6 +1088,7 @@ button {
     }
 
     .calendar {
+        width: 48.9%;
         max-width: 301px;
         font-weight: 400;
         background: #fff;
@@ -1085,7 +1116,7 @@ button {
         border: 1px solid transparent;
         float: left;
         max-width: 43px;
-        width: 100%;
+        width: 14.2857%;
         min-height: 42px;
         border:1px solid #54677e;
         border-top: none;
@@ -1149,12 +1180,12 @@ button {
     }
 
     .view-stories__box {
-        width: 48%;
-        margin-left: 15px;
         background-color: $secColor;
         padding: 50px 0px 49px 65px;
         color: #fff;
         text-decoration: none;
+        flex: 1;
+
         h3 {
             font-size: 36px;
             font-family: $roboto-light;
@@ -1252,7 +1283,6 @@ button {
     width: 100%;
     .tabs-header {
         width: 100%;
-        border-bottom: 1px solid #bdc6cb;
         @include display(flex);
         @include justify-content(space-between);
 
@@ -1264,6 +1294,17 @@ button {
             font-size: 16px;
             border: none;
             padding: 16px 0px;
+            border-bottom: 1px solid #bdc6cb;
+
+            &:focus {
+                outline: 0px;
+            }
+            
+            &.active {
+                background: #fff;
+                color: #000;
+                border-bottom: none;
+            }
         }
     }
 }
@@ -1296,8 +1337,6 @@ div.tab button.active {
 .tabcontent {
     display: none;
     padding: 23px;
-    border: 1px solid #ccc;
-    border-top: none;
     background: #fff;
 
     p {
@@ -1306,3 +1345,64 @@ div.tab button.active {
 }
 }
 
+@media screen and(min-width: 768px) {
+    .content-container {
+        height: 675px;
+    }
+    .insta-image {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sm-margin-0 {
+        margin: 0;
+    }
+    .sm-margin-top {
+        margin-top: 15px;
+    }
+    .sm-padd-0 {
+        padding: 0;
+    }
+    .sm-disp-none {
+        display: none;
+    }
+    .sm-flex-column {
+        flex-direction: column;
+    }
+    .sm-flex-row {
+        flex-direction: row;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+    header .main-nav > * {
+        display: none;
+    }
+    .banner-slider img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .video-options__box {
+        max-width: none;
+        height: initial;
+        @include justify-content(space-around);
+    }
+    .content-left-bottom__section {
+        margin-right: 0px;
+    }
+    .content-right-bottom__section .insta-row .insta-image img {
+        object-position: 60%;
+    }
+    .content-right-bottom__section .calendar  {
+        width: 301px;
+        background: #152840;
+        margin: 0 auto;
+    }
+    .content-right-bottom__section .tabs__box .tabs-header .tablinks {
+        font-size: 14px;
+        border: 1px solid #eee;
+    }
+    .youtube-video__container {
+        height: 400px;
+    }
+}
