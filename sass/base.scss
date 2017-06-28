@@ -505,10 +505,6 @@ button {
     transition: all 1s;
     flex: 2;
 
-
-    &.smaller__box {
-        width: 50%;
-    }
     .socials__box {
         background-color: #fff;
         padding: 28px 0px;
@@ -1352,6 +1348,9 @@ div.tab button.active {
     .insta-image {
         max-width: 300px;
     }
+    .content__menu-right.smaller-box {
+        width: 50%;
+    }
 }
 @media screen and (max-width: 767px) {
     .sm-margin-0 {
@@ -1404,5 +1403,8 @@ div.tab button.active {
     }
     .youtube-video__container {
         height: 400px;
+    }
+    .side-bar__nav__list a .icon-right-open {
+        display: none;
     }
 }

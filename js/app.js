@@ -91,5 +91,5 @@ window.sr = new ScrollReveal(n), sr.reveal("#header"), sr.reveal(".socials__box"
   $('.side-bar__nav__list li').click(function() {
     $('.side-bar__nav__list li .icon-right-open').toggleClass('active');
   });
-  $('.youtube-video__container iframe').css('position','relative');
+  
 });
