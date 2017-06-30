@@ -443,7 +443,7 @@ button {
     .side-bar__submenu__category__box {
         width: 100%;
         @include display(flex);
-        padding: 22px;
+        padding: 22.7px;
 
         &:hover {
             background-color: #263a54;
@@ -885,7 +885,7 @@ button {
     height: 100%;
     .stats-likes-shares__box {
         width: 100%;
-        padding: 110px 85px 121px;
+        padding: 110px 74px 121px;
         background-color: $navyColor;
         .like-shares__text-box {
             max-width: 115px;
@@ -1123,7 +1123,7 @@ button {
     }
     .calendar_content div:hover {
         border: 1px solid #dcdcdc;
-        cursor: default;
+        cursor: pointer;
     }
     .calendar_content .blank {
         background-color: #152840;
@@ -1213,6 +1213,7 @@ button {
         .article-box__image {
             height: 300px;
             background: url('../images/img-grass.jpg') no-repeat 100%;
+            background-size: cover;
 
             .article-box__triangle {
                 position: absolute;
@@ -1263,7 +1264,7 @@ button {
         position: relative;
         
         .quotes-text__box {
-            padding: 26.2px 81px;
+            padding: 26.2px 22px 26.2px 81px;
             font-size: 24px;
             font-family: $roboto-light-italic;
         }

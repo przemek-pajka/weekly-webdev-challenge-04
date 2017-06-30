@@ -88,7 +88,7 @@ window.sr = new ScrollReveal(n), sr.reveal("#header"), sr.reveal(".socials__box"
   $('.hamburger').click(function() {
     $('.main-nav').toggleClass('disable');
   });
-  $('.side-bar__nav__list li').click(function() {
+  $('.side-bar__nav__list li .blog-submenu').click(function() {
     $('.side-bar__nav__list li .icon-right-open').toggleClass('active');
   });
   
